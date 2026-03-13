@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>GPS Location Tool</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <style>
+
+        body{
+        margin:0;
+        font-family:Arial;
+        }
+
+        #map{
+        height:90vh;
+        }
+
+        #panel{
+        height:10vh;
+        padding:10px;
+        background:#f4f4f4;
+        }
+
+        button{
+        padding:8px 15px;
+        font-size:16px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div id="map"></div>
+
+<div id="panel">
+
+    Latitude:
+    <span id="lat">--</span>
+
+    Longitude:
+    <span id="lng">--</span>
+
+    <button onclick="sendLocation()">Send Location</button>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
